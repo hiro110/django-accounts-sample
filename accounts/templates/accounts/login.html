@@ -1,0 +1,11 @@
+<form method="post" action="{% url 'accounts:login' %}">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    {{ form.errors.username }}
+    username:{{ form.username }}
+    {{ form.errors.password }}
+    password:{{ form.password }}
+    <input type="submit" value="Login">
+</form>
+
+<a href='../new'>ユーザ登録はこちら</a>

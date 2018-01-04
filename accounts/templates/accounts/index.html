@@ -1,0 +1,18 @@
+{% if user_list %}
+    <table>
+        <thead>
+            <tr>
+                <th>id</th><th>username</th><th>is_superuser</th><th>last_login</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in user_list %}
+                <tr>
+                    <td>{{ user.id }}</td><td>{{ user.username }}</td><td>{{ user.is_superuser }}</td><td>{{ user.last_login }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+<a href="./logout">ログアウト</a>

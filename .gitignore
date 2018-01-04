@@ -1,0 +1,16 @@
+# file of .gitignore
+
+.DS_Store
+.python-version
+.vscode
+__pycache__
+*.pyc
+*.pyo
+.eggs
+*.egg-info
+.cache
+.coverage
+.tox
+
+db.sqlite3
+manage.py
